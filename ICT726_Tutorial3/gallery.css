@@ -1,0 +1,12 @@
+div.floating {
+    float: left;
+}
+
+div.floating p{
+    text-align: center;
+}
+
+.imageSize {
+    width: 200px;
+    height: 200px;
+}
