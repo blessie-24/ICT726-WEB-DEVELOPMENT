@@ -1,0 +1,11 @@
+/**/private*
+!/**/src/**/private*
+
+/**/key*
+!/**/src/**/key*
+
+/**/.env*
+!/**/src/**/.env*
+
+/**/local.properties
+!/**/src/**/local.properties

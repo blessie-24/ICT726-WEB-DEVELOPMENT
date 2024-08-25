@@ -1,0 +1,104 @@
+@import url("font.css");
+
+:root {
+    --primary: BLACK;
+    --primaryHover: WHITE;
+    --secondary: LIGHTGRAY;
+    --tertiary: chartreuse;
+    --background: var(--secondary);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    padding-top: 2rem;
+    
+    font-family: Michroma, Arial, Helvetica, sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.exercise {
+    padding: 2% calc((100vw - 1020px) / 2);
+}
+
+.exercise:hover {
+    background-color: var(--primaryHover);
+    cursor: pointer;
+}
+
+.exercise .content {
+    padding: 0 6%;
+}
+
+.exercise .quest {
+    padding: 1.5% 6%;
+}
+
+.exercise .quest.question {
+    font-family: GideonRoman, Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    padding-top: 2%;
+}
+
+.exercise .quest.answer {
+    font-family: Audiowide, Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    padding-top: 1.5%;
+}
+
+.exercise .quest.answer .theAnswer {
+    background-color: none;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0.25rem;
+    border-radius: 0.50rem;
+}
+
+.exercise .quest.answer .theAnswer:hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    border-style: solid;
+}
+
+.answerContent.active {
+    display: flex;
+    cursor: text;
+    padding: 1.5rem;
+    background-color: var(--primary);
+}
+.answerContent {
+    display: none;
+}
+
+.anwser.indicator {
+    background-color: orange;
+    border-color: orange;
+    border-style: solid;
+    border-width: 0.25rem;
+    border-radius: 0.50rem;
+}
+.anwser.indicator.waiting {
+}
+
+.anwser.indicator.ready {
+    background-color: var(--tertiary);
+    border-color: var(--tertiary);
+    border-style: solid;
+    border-width: 0.25rem;
+    border-radius: 0.50rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
